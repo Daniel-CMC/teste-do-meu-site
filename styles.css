@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D9D9D9;
+    overflow-y: scroll; /* Adiciona barra de rolagem vertical */
+}
+
+.navbar { 
+    background-color: #EAB14D; 
+    overflow: hidden; 
+} 
+.navbar ul { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+} 
+.navbar ul li { 
+    display: inline; 
+    margin: 0 10px;
+} 
+.navbar ul li a { 
+    display: block; 
+    color: white; 
+    text-align: center; 
+    padding: 14px 20px; 
+    text-decoration: none; 
+} 
+.navbar ul li a:hover { 
+    background-color: #575757; 
+}
+
+.header {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    padding: 1rem; 
+}
+
+.logo { 
+    max-width: 100%; 
+    height: auto;
+    margin-right: 1rem; 
+} 
+
+.logo-container { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-right: 1rem; 
+}
+
+.logo-text { 
+    font-size: 200%;
+    font-weight: bolder;
+    text-shadow: 3px 3px 4px #000000;
+    color: #f5a801; 
+    margin-top: 0.5rem; 
+}
+
+.banner { 
+    flex-grow: 1; 
+    max-height: 100px; 
+}
+
+header {
+    background-color: #D9D9D9; 
+    color: #fff; 
+    padding: 1rem; 
+    text-align: center;
+}
+
+main {
+    display: flex; /* Adiciona flexbox ao contêiner principal */
+    padding: 2rem;
+}
+
+.content {
+    flex: 3;
+    margin-left: 1rem; /* Adiciona margem à esquerda do conteúdo */
+}
+
+.sidebar {
+    flex: 0.5;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    width: 100px; /* Ajuste a largura conforme necessário */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+img {
+    max-width: 100%; /* A imagem não ultrapassará a largura do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.gallery img {
+    width: 70%; /* Defina a largura desejada para imagens na galeria */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.texto-esquerda {
+    text-align: left;
+}
+
+.texto-direita {
+    text-align: right;
+}
+
+.texto-centro {
+    text-align: center;
+}
+
+.texto-justificado {
+    text-align: justify;
+}
+
+.imagem-esquerda {
+    float: left;
+    margin-right: 10px;
+}
+
+.imagem-direita {
+    float: right;
+    margin-left: 10px;
+}
+
+.imagem-centro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Alinha os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.grid-container {
+    display: grid;
+    justify-items: center; /* Alinha os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+/* Styles for Mobile Devices */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+
+display:none;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+}
+
